@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tìm truyện</title>
+    <link rel="stylesheet" href="./TRANGTRI/Đai.css" />
+    <link rel="stylesheet" href="./TRANGTRI/CUOIKHOA.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+
+    <!-- sign up -->
+    <div class="uhl" id="uhl">
+      <div class="cardl" id="cardl">
+        <div class="lili"><h1>Đăng kí</h1><a href="#" onclick="CLS()" id="CLS">&times;</a></div>
+        <form action="/CUOIKHOA/index.html">
+          <div>
+            <div class="inputl">
+              <label for="">Tài khoản</label>
+              <input
+                type="text"
+                class="input-fieldl"
+                id="mnl"
+                placeholder="Nhập tên tài khoản"
+                maxlength="10"
+                multiple
+                required
+              />
+            </div>
+            <div class="inputl">
+              <label for="">Số điện thoại</label>
+              <input
+                type="number"
+                class="input-fieldl"
+                placeholder="Nhập số điện thoại"
+                id="pnl"
+                maxlength="10"
+                required
+              />
+            </div>
+            <div class="inputl">
+              <label for="">Giới Tính</label>
+              <select name="" id="" required>
+                <option value="1">Nam</option>
+                <option value="2">Nữ</option>
+                <option value="3">Khác</option>
+              </select>
+            </div>
+            <div class="inputl">
+              <label for="">Mật khẩu</label>
+              <input
+                type="password"
+                class="input-fieldl"
+                id="mpl"
+                placeholder="Nhập mật khẩu"
+                minlength="8"
+                maxlength="15"
+                required
+              />
+              <div class="hoho">
+                <input type="checkbox" onclick="myp()" /><p class="bk">show password</p>
+              </div>
+            </div>
+            <div class="actionl">
+              <button
+                type="submit"
+                class="action-buttonl"
+                onclick="functiontoExecute()"
+              >
+                Get Started
+              </button>
+            </div>
+            <p>
+              Haven't got an account?
+              <a href="./CUOIKHOA2.html" class="ak">Click here</a> to Sign Up
+            </p>
+            <p>
+              By Signing Up, you are agreeing to our
+              <a href="#" class="ak">Terms and conditions</a>
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- sign in -->
+    <div class="uhl2" id="uhl2">
+      <div class="cardl2" id="cardl2">
+        <div class="lili2"><h1>Đăng nhập</h1><a href="#" onclick="CLS2()" id="CLS">&times;</a></div>
+        <form action="/CUOIKHOA/index.html">
+          <div>
+            <div class="inputl2">
+              <label for="">Tài khoản</label>
+              <input
+                type="text"
+                class="input-fieldl2"
+                id="mnl2"
+                placeholder="Nhập tên tài khoản"
+                maxlength="10"
+                multiple
+                required
+              />
+            </div>
+            </div>
+            <div class="inputl2">
+              <label for="">Mật khẩu</label>
+              <input
+                type="password"
+                class="input-fieldl2"
+                id="mpl2"
+                placeholder="Nhập mật khẩu"
+                minlength="8"
+                maxlength="15"
+                required
+              />
+              <div class="hoho2">
+                <input type="checkbox" onclick="myp2()" /><p>show password</p>
+              </div>
+            </div>
+            <div class="actionl2">
+              <button
+                type="submit"
+                class="action-buttonl2"
+                onclick="functiontoExecute()"
+              >
+                Join
+              </button>
+            </div>
+            <p>
+              Already got an account?
+              <a href="/CUOIKHOA/index.html">Click here</a> to Sign Up
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- header -->
+    <div class="margin">
+      <!-- menu bar -->
+      <div class="header">
+        <div>
+          <button onclick="Myfunc()" class="test">
+            <i class="fa-solid fa-magnifying-glass fa-2xl"></i>
+          </button>
+        </div>
+        <a href="./index.html"
+          ><img
+            src="./IMAGE/logo-776b73c9.png"
+            alt=""
+            style="width: 40px; height: 40px"
+        /></a>
+        <img
+          src="./IMAGE/th.jpg"
+          alt=""
+          style="width: 24px; height: 24px"
+          onclick="openNav()"
+        />
+      </div>
+      <div id="INPUT" style="display: none;">
+        <input
+          type="text"
+          placeholder="Tìm truyện, tên tác giả"
+          class="input1"
+          id="I"
+        />
+      </div>
+      <!-- image-moving -->
+      <div>
+        <div class="slideshow-container">
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+            <a
+              href="https://shopee.vn/product/37251933/591989399?utm_campaign=-&utm_content=LOreal----&utm_medium=affiliates&utm_source=an_17347800071&utm_term=b5iqyvrd1p8o"
+              ><img
+                class="main"
+                src="./IMAGE/2a59dc1ebfb7d5eca4a5f27231fe4f09.webp"
+                style="width: 100%"
+            /></a>
+          </div>
+          <div class="mySlides fade">
+            <a
+              href="https://shopee.vn/product/37251933/591989399?utm_campaign=-&utm_content=LOreal----&utm_medium=affiliates&utm_source=an_17347800071&utm_term=b5iqyvrd1p8o"
+              ><img
+                class="main"
+                src="./IMAGE/917f589d7eb6ada5e180fe3476253ba6.webp"
+                style="width: 100%"
+            /></a>
+          </div>
+
+          <div class="mySlides fade">
+            <a
+              href="https://shopee.vn/product/37251933/591989399?utm_campaign=-&utm_content=LOreal----&utm_medium=affiliates&utm_source=an_17347800071&utm_term=b5iqyvrd1p8o"
+            >
+              <img
+                class="main"
+                src="./IMAGE/2a59dc1ebfb7d5eca4a5f27231fe4f09.webp"
+                style="width: 100%"
+            /></a>
+          </div>
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- choose some genre -->
+    <div class="all-border hu">
+      <div class="allin">
+        <div>
+          <p>Tình trạng</p>
+          <div class="k">
+            <button onclick="Change()">Còn tiếp</button>
+            <button onclick="Change()">Hoàn thành</button>
+            <button onclick="Change()">Tạm dừng</button>
+          </div>
+        </div>
+        <div>
+          <p>Thể loại</p>
+          <div class="bs k">
+            <button class="k" onclick="Change()">Tiên hiệp</button>
+            <button class="k" onclick="Change()">Huyền huyễn</button>
+            <button class="k" onclick="Change()">Khoa huyễn</button>
+            <button class="k" onclick="Change()">võng du</button>
+            <button class="k" onclick="Change()">Đô thị</button>
+            <button class="k" onclick="Change()">Đồng nhân</button>
+            <button class="k" onclick="Change()">Cạnh Kỹ</button>
+            <button class="k" onclick="Change()">Kiếm hiệp</button>
+          </div>
+        </div>
+        <div>
+          <p>Bối cảnh thế giới</p>
+          <div class="bs k">
+            <button>Đông phương huyền huyễn</button>
+            <button>Dị thế đại lục</button>
+            <button>Tây phương kỳ huyễn</button>
+            <button>Du hí dị giới</button>
+            <button>Thế giới tương lai</button>
+            <button>Mạt thế nguy cơ</button>
+            <button>Tiến hoá biến dị</button>
+            <button>Lịch sử quan trường</button>
+            <button>Hào môn thế gia</button>
+            <button>Tinh tế văn minh</button>
+            <button>Linh khí khôi phục</button>
+            <button>Yêu đương thường ngày</button>
+            <button>Tu chân văn minh</button>
+            <button>Trinh tham thôi lý</button>
+            <button>Thanh xuân vườn trường</button>
+            <button>Yêu đương thường ngày</button>
+            <button>Điện tử cạnh kỹ</button>
+            <button>Dân gian truyền thuyết</button>
+            <button>Đô thị dị năng</button>
+            <button>Quỷ bí huyền nghi</button>
+            <button>Thời không xuyên toa</button>
+            <button>Cao võ thế giới</button>
+            <button>Cung vi trạch đấu</button>
+            <button>Thương chiến chức tràng</button>
+            <button>Thám hiểm sinh tồn</button>
+            <button>Ngu nhạc minh tinh</button>
+            <button>Lịch sử quân sự</button>
+            <button>Thần thoại tu chân</button>
+            <button>Hào môn thế gia</button>
+            <button>Vương triều tranh bá</button>
+            <button>Tây phương kỳ huyễn</button>
+            <button>Hắc ám huyễn tưởng</button>
+            <button>Tiên lữ kỳ duyên</button>
+            <button>Viễn cổ hồng hoang</button>
+            <button>Tinh tế luyến ca</button>
+            <button>Cáo tiếu thổ tào</button>
+            <button>Diễn sinh đồng nhân</button>
+            <button>Kỳ diệu thế giới</button>
+            <button>Cổ điển tiên hiệp</button>
+            <button>Hư nghĩ võng du</button>
+            <button>Ma pháp huyễn tinh</button>
+          </div>
+        </div>
+        <div>
+          <p>Từ khoá</p>
+          <input type="text" placeholder="từ khoá muốn lọc" class="selector" />
+        </div>
+      </div>
+      <div class="allin hi">
+        <div class="up">
+          <div class="bs">
+            <p>Thuộc tính</p>
+            <div>
+              <button>Chọn lọc</button>
+              <button>Chất lượng cao</button>
+              <button>Thu phí</button>
+              <button>Tính phí</button>
+            </div>
+          </div>
+          <div class="bs">
+            <p>Tính cách nhân vật chính</p>
+            <div>
+              <button>Điềm đạm</button>
+              <button>Nhiệt huyết</button>
+              <button>Vô sỉ</button>
+              <button>Thiết huyết</button>
+              <button>Nhẹ nhàng</button>
+              <button>Cơ trí</button>
+              <button>Lãnh khốc</button>
+              <button>Kiêu ngạo</button>
+              <button>Giảo hoạt</button>
+            </div>
+          </div>
+        </div>
+        <div class="up2">
+          <p>Sắp xếp</p>
+          <select value="Sắp xếp" class="selector">
+            <option value="">Mới lên chương</option>
+            <option value="">Mới đăng</option>
+            <option value="">Lượt đọc tuần</option>
+            <option value="">đề cử</option>
+            <option value="">Lượt đề cử tuần</option>
+            <option value="">Lượt bình luận</option>
+            <option value="">Lượt bình luận tuần</option>
+            <option value="">Lượt đánh dấu</option>
+            <option value="">Lượt đánh giá</option>
+            <option value="">Điểm đánh giá</option>
+            <option value="">Số chương</option>
+            <option value="">Lượt mở khoá</option>
+            <option value="">Tên chuyện</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    
+    <!-- the ending -->
+    <div style="width: 1025px">
+      <div class="about" id="about" style="width: 1025px">
+        <h1>Metruyenchu</h1>
+        <img
+          src="./IMAGE/logo-776b73c9 (1).png"
+          alt=""
+          style="height: 64px; width: auto"
+        />
+        <div class="content">
+          <h4>Nền tảng truyện online free</h4>
+          <p>
+            Metruyenchu là nền tảng truyện free dành cho người dùng, tập hợp
+            những editor nghiệp dư và đầy niềm đam mê với những câu chuyện hành
+            động, khám phá đủ các thể loại. Chúng tôi luôn sẵn lòng giúp đỡ và
+            dành thời gian để thoã mãn đam mê của bạn.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- navigator -->
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn f" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="#" class="f">
+        <i class="fa-solid fa-user"></i>
+        <b>User</b></a
+      >
+      <div class="si-su">
+        <a class="f2" onclick="Myaction2()">.Đăng Nhập</a>
+        <p>/</p>
+        <a class="f2" onclick="Myaction()">.Đăng Kí</a>
+      </div>
+      <a href="./VIP.html" class="f">.Nâng cấp tài khoản</a>
+      <a href="./Watching.html" class="f">.Tủ truyện</a>
+      <a href="./inprogress.html" class="f">.Cài đặt cá nhân</a>
+      <a href="./inprogress.html" class="f">.Yêu cầu hỗ trợ</a>
+      <div class="ori">
+        <div>
+          <img src="./IMAGE/potato-3246efaf.png" alt="" class="makeit" />
+          <p>0</p>
+        </div>
+        <div>
+          <img src="./IMAGE/candies-d5f42b83.png" alt="" class="makeit" />
+          <p>0</p>
+        </div>
+      </div>
+      <div class="nap">
+        <a href="./inprogress.html" class="f">Nạp</a>
+        <img src="./IMAGE/potato-3246efaf.png" alt="" class="makeit" />
+      </div>
+    </div>
+
+    <!-- the functions -->
+    <script>
+      // Get the input field
+      let input = document.getElementById("I");
+      // Execute a function when the user presses a key on the keyboard
+      input.addEventListener("keypress", function (event) {
+        // If the user presses the "Enter" key on the keyboard
+        if (event.key === "Enter") {
+          event.preventDefault();
+          // Trigger the button element with a click
+          window.location.href='http://127.0.0.1:5500/CUOIKHOA/%C4%90%E1%BA%A1i.html'
+        }
+      })
+      function Myaction() {
+        document.getElementById("cardl").style.display = "block";
+        document.getElementById("uhl").style.display = "block";
+      }
+      function myp() {
+      var x = document.getElementById("mpl");
+      if (x.type === "password") {
+        x.type = "text";
+      } else {
+        x.type = "password";
+      }}
+      function Myaction2() {
+        document.getElementById("cardl2").style.display = "block";
+        document.getElementById("uhl2").style.display = "block";
+      }
+      function myp2() {
+      var x = document.getElementById("mpl2");
+      if (x.type === "password") {
+        x.type = "text";
+      } else {
+        x.type = "password";
+      }}
+      function CLS(){
+        document.getElementById("cardl").style.display='none';
+        document.getElementById("uhl").style.display='none';
+      }
+      function CLS2(){
+        document.getElementById("cardl2").style.display="none";
+        document.getElementById("uhl2").style.display="none";
+      }
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+      function Myfunc() {
+        var x = document.getElementById("INPUT");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
+  </body>
+</html>

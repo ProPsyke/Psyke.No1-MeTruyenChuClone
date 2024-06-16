@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Truyện đánh dấu</title>
+    <link rel="stylesheet" href="./TRANGTRI/Watching.css" />
+    <link rel="stylesheet" href="./TRANGTRI/CUOIKHOA.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+
+    <!-- sign Up -->
+    <div class="uhl" id="uhl">
+      <div class="cardl" id="cardl">
+        <div class="lili"><h1>Đăng kí</h1><a href="#" onclick="CLS()" id="CLS">&times;</a></div>
+        <form action="/CUOIKHOA/index.html">
+          <div>
+            <div class="inputl">
+              <label for="">Tài khoản</label>
+              <input
+                type="text"
+                class="input-fieldl"
+                id="mnl"
+                placeholder="Nhập tên tài khoản"
+                maxlength="10"
+                multiple
+                required
+              />
+            </div>
+            <div class="inputl">
+              <label for="">Số điện thoại</label>
+              <input
+                type="number"
+                class="input-fieldl"
+                placeholder="Nhập số điện thoại"
+                id="pnl"
+                maxlength="10"
+                required
+              />
+            </div>
+            <div class="inputl">
+              <label for="">Giới Tính</label>
+              <select name="" id="" required>
+                <option value="1">Nam</option>
+                <option value="2">Nữ</option>
+                <option value="3">Khác</option>
+              </select>
+            </div>
+            <div class="inputl">
+              <label for="">Mật khẩu</label>
+              <input
+                type="password"
+                class="input-fieldl"
+                id="mpl"
+                placeholder="Nhập mật khẩu"
+                minlength="8"
+                maxlength="15"
+                required
+              />
+              <div class="hoho">
+                <input type="checkbox" onclick="myp()" /><p class="bk">show password</p>
+              </div>
+            </div>
+            <div class="actionl">
+              <button
+                type="submit"
+                class="action-buttonl"
+                onclick="functiontoExecute()"
+              >
+                Get Started
+              </button>
+            </div>
+            <p>
+              Haven't got an account?
+              <a href="./CUOIKHOA2.html" class="ak">Click here</a> to Sign Up
+            </p>
+            <p>
+              By Signing Up, you are agreeing to our
+              <a href="#" class="ak">Terms and conditions</a>
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- sign in -->
+    <div class="uhl2" id="uhl2">
+      <div class="cardl2" id="cardl2">
+        <div class="lili2"><h1>Đăng nhập</h1><a href="#" onclick="CLS2()" id="CLS">&times;</a></div>
+        <form action="/CUOIKHOA/index.html">
+          <div>
+            <div class="inputl2">
+              <label for="">Tài khoản</label>
+              <input
+                type="text"
+                class="input-fieldl2"
+                id="mnl2"
+                placeholder="Nhập tên tài khoản"
+                maxlength="10"
+                multiple
+                required
+              />
+            </div>
+            </div>
+            <div class="inputl2">
+              <label for="">Mật khẩu</label>
+              <input
+                type="password"
+                class="input-fieldl2"
+                id="mpl2"
+                placeholder="Nhập mật khẩu"
+                minlength="8"
+                maxlength="15"
+                required
+              />
+              <div class="hoho2">
+                <input type="checkbox" onclick="myp2()" /><p>show password</p>
+              </div>
+            </div>
+            <div class="actionl2">
+              <button
+                type="submit"
+                class="action-buttonl2"
+                onclick="functiontoExecute()"
+              >
+                Join
+              </button>
+            </div>
+            <p>
+              Already got an account?
+              <a href="/CUOIKHOA/index.html">Click here</a> to Sign Up
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- header -->
+    <div class="margin">
+      <!-- menu bar -->
+      <div class="header">
+        <div>
+          <button onclick="Myfunc()" class="test">
+            <i class="fa-solid fa-magnifying-glass fa-2xl"></i>
+          </button>
+        </div>
+        <a href="./index.html"
+          ><img
+            src="./IMAGE/logo-776b73c9.png"
+            alt=""
+            style="width: 40px; height: 40px"
+        /></a>
+        <img
+          src="./IMAGE/th.jpg"
+          alt=""
+          style="width: auto; height: 24px"
+          onclick="openNav()"
+        />
+      </div>
+      <div id="INPUT" style="display: none;">
+        <input type="text" placeholder="Tìm truyện, tên tác giả" class="int" id="I"/>
+      </div>
+      <!-- image-moving -->
+      <div class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <a href="./reading.html"
+            ><img
+              class="main"
+              src="./IMAGE/a1e64a4b801e4b729a85972b3deb202b.webp"
+              style="width: 100%"
+          /></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- front row -->
+    <div class="so-annoying">
+      <a href="./History.html"><button class="b2">TRUYỆN ĐANG ĐỌC</button></a>
+      <button class="b1">TRUYỆN ĐÁNH DẤU</button>
+    </div>
+
+    <!-- main place -->
+    <div class="im">
+      <div class="one-row">
+        <div class="oneahalfrow">
+          <div>
+            <a href="./reading.html"
+              ><img src="./IMAGE/150 (3).webp" alt="" class="adj card"
+            /></a>
+          </div>
+          <div class="d">
+            <a href="./reading.html"><p>Ta sáng tạo quái vật danh sách</p></a>
+            <p>Đã đọc 317/322</p>
+          </div>
+        </div>
+        <div class="h">2023-03-02 14:53:18</div>
+      </div>
+      <div class="one-row">
+        <div class="oneahalfrow">
+          <div>
+            <a href="./reading.html"
+              ><img src="./IMAGE/150 (3).webp" alt="" class="adj card"
+            /></a>
+          </div>
+          <div class="d">
+            <a href="./reading.html"><p>Ta sáng tạo quái vật danh sách</p></a>
+            <p>Đã đọc 317/322</p>
+          </div>
+        </div>
+        <div class="h">2023-03-02 14:53:18</div>
+      </div>
+      <div class="one-row">
+        <div class="oneahalfrow">
+          <div>
+            <a href="./reading.html"
+              ><img src="./IMAGE/150 (3).webp" alt="" class="adj card"
+            /></a>
+          </div>
+          <div class="d">
+            <a href="./reading.html"><p>Ta sáng tạo quái vật danh sách</p></a>
+            <p>Đã đọc 317/322</p>
+          </div>
+        </div>
+        <div class="h">2023-03-02 14:53:18</div>
+      </div>
+      <div class="one-row">
+        <div class="oneahalfrow">
+          <div>
+            <a href="./reading.html"
+              ><img src="./IMAGE/150 (3).webp" alt="" class="adj card"
+            /></a>
+          </div>
+          <div class="d">
+            <a href="./reading.html"><p>Ta sáng tạo quái vật danh sách</p></a>
+            <p>Đã đọc 317/322</p>
+          </div>
+        </div>
+        <div class="h">2023-03-02 14:53:18</div>
+      </div>
+      <div class="one-row">
+        <div class="oneahalfrow">
+          <div>
+            <a href="./reading.html"
+              ><img src="./IMAGE/150 (3).webp" alt="" class="adj card"
+            /></a>
+          </div>
+          <div class="d">
+            <a href="./reading.html"><p>Ta sáng tạo quái vật danh sách</p></a>
+            <p>Đã đọc 317/322</p>
+          </div>
+        </div>
+        <div class="h">2023-03-02 14:53:18</div>
+      </div>
+      <div class="one-row">
+        <div class="oneahalfrow">
+          <div>
+            <a href="./reading.html"
+              ><img src="./IMAGE/150 (3).webp" alt="" class="adj card"
+            /></a>
+          </div>
+          <div class="d">
+            <a href="./reading.html"><p>Ta sáng tạo quái vật danh sách</p></a>
+            <p>Đã đọc 317/322</p>
+          </div>
+        </div>
+        <div class="h">2023-03-02 14:53:18</div>
+      </div>
+      <div class="one-row">
+        <div class="oneahalfrow">
+          <div>
+            <a href="./reading.html"
+              ><img src="./IMAGE/150 (3).webp" alt="" class="adj card"
+            /></a>
+          </div>
+          <div class="d">
+            <a href="./reading.html"><p>Ta sáng tạo quái vật danh sách</p></a>
+            <p>Đã đọc 317/322</p>
+          </div>
+        </div>
+        <div class="h">2023-03-02 14:53:18</div>
+      </div>
+      <div class="one-row">
+        <div class="oneahalfrow">
+          <div>
+            <a href="./reading.html"
+              ><img src="./IMAGE/150 (3).webp" alt="" class="adj card"
+            /></a>
+          </div>
+          <div class="d">
+            <a href="./reading.html"><p>Ta sáng tạo quái vật danh sách</p></a>
+            <p>Đã đọc 317/322</p>
+          </div>
+        </div>
+        <div class="h">2023-03-02 14:53:18</div>
+      </div>
+      <div class="one-row">
+        <div class="oneahalfrow">
+          <div>
+            <a href="./reading.html"
+              ><img src="./IMAGE/150 (3).webp" alt="" class="adj card"
+            /></a>
+          </div>
+          <div class="d">
+            <a href="./reading.html"><p>Ta sáng tạo quái vật danh sách</p></a>
+            <p>Đã đọc 317/322</p>
+          </div>
+        </div>
+        <div class="h">2023-03-02 14:53:18</div>
+      </div>
+      <div class="one-row">
+        <div class="oneahalfrow">
+          <div>
+            <a href="./reading.html"
+              ><img src="./IMAGE/150 (3).webp" alt="" class="adj card"
+            /></a>
+          </div>
+          <div class="d">
+            <a href="./reading.html"><p>Ta sáng tạo quái vật danh sách</p></a>
+            <p>Đã đọc 317/322</p>
+          </div>
+        </div>
+        <div class="h">2023-03-02 14:53:18</div>
+      </div>
+      <div class="one-row">
+        <div class="oneahalfrow">
+          <div>
+            <a href="./reading.html"
+              ><img src="./IMAGE/150 (3).webp" alt="" class="adj card"
+            /></a>
+          </div>
+          <div class="d">
+            <a href="./reading.html"><p>Ta sáng tạo quái vật danh sách</p></a>
+            <p>Đã đọc 317/322</p>
+          </div>
+        </div>
+        <div class="h">2023-03-02 14:53:18</div>
+      </div>
+      <div class="one-row">
+        <div class="oneahalfrow">
+          <div>
+            <a href="./reading.html"
+              ><img src="./IMAGE/150 (3).webp" alt="" class="adj card"
+            /></a>
+          </div>
+          <div class="d">
+            <a href="./reading.html"><p>Ta sáng tạo quái vật danh sách</p></a>
+            <p>Đã đọc 317/322</p>
+          </div>
+        </div>
+        <div class="h">2023-03-02 14:53:18</div>
+      </div>
+      <div class="one-row">
+        <div class="oneahalfrow">
+          <div>
+            <a href="./reading.html"
+              ><img src="./IMAGE/150 (3).webp" alt="" class="adj card"
+            /></a>
+          </div>
+          <div class="d">
+            <a href="./reading.html"><p>Ta sáng tạo quái vật danh sách</p></a>
+            <p>Đã đọc 317/322</p>
+          </div>
+        </div>
+        <div class="h">2023-03-02 14:53:18</div>
+      </div>
+      <div class="one-row">
+        <div class="oneahalfrow">
+          <div>
+            <a href="./reading.html"
+              ><img src="./IMAGE/150 (3).webp" alt="" class="adj card"
+            /></a>
+          </div>
+          <div class="d">
+            <a href="./reading.html"><p>Ta sáng tạo quái vật danh sách</p></a>
+            <p>Đã đọc 317/322</p>
+          </div>
+        </div>
+        <div class="h">2023-03-02 14:53:18</div>
+      </div>
+      <div class="one-row">
+        <div class="oneahalfrow">
+          <div>
+            <a href="./reading.html"
+              ><img src="./IMAGE/150 (3).webp" alt="" class="adj card"
+            /></a>
+          </div>
+          <div class="d">
+            <a href="./reading.html"><p>Ta sáng tạo quái vật danh sách</p></a>
+            <p>Đã đọc 317/322</p>
+          </div>
+        </div>
+        <div class="h">2023-03-02 14:53:18</div>
+      </div>
+    </div>
+
+    <!-- pagination -->
+    <div class="pagination bottom-border">
+      <a href="./Watching.html"><i class="fa-solid fa-backward-step"></i></a>
+      <a href="./Watching.html"><i class="fa-solid fa-chevron-left"></i></a>
+      <input type="number" class="input2" placeholder="1/120" />
+      <a href="./Watching.html"><i class="fa-solid fa-chevron-right"></i></a>
+      <a href="./Watching.html"><i class="fa-solid fa-forward-step"></i></a>
+    </div>
+
+    <!-- the ending -->
+    <div style="width: 1025px">
+      <div class="about" id="about" style="width: 1025px">
+        <h1>Metruyenchu</h1>
+        <img
+          src="./IMAGE/logo-776b73c9 (1).png"
+          alt=""
+          style="height: 64px; width: auto"
+        />
+        <div class="content">
+          <h4>Nền tảng truyện online free</h4>
+          <p>
+            Metruyenchu là nền tảng truyện free dành cho người dùng, tập hợp
+            những editor nghiệp dư và đầy niềm đam mê với những câu chuyện hành
+            động, khám phá đủ các thể loại. Chúng tôi luôn sẵn lòng giúp đỡ và
+            dành thời gian để thoã mãn đam mê của bạn.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- navigator -->
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn f" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="#" class="f">
+        <i class="fa-solid fa-user"></i>
+        <b>User</b></a
+      >
+      <div class="si-su">
+        <a class="f2" onclick="Myaction2()">.Đăng Nhập</a>
+        <p>/</p>
+        <a class="f2" onclick="Myaction()">.Đăng Kí</a>
+      </div>
+      <a href="./VIP.html" class="f">.Nâng cấp tài khoản</a>
+      <a href="./Watching.html" class="f">.Tủ truyện</a>
+      <a href="./inprogress.html" class="f">.Cài đặt cá nhân</a>
+      <a href="./inprogress.html" class="f">.Yêu cầu hỗ trợ</a>
+      <div class="ori">
+        <div>
+          <img src="./IMAGE/potato-3246efaf.png" alt="" class="makeit" />
+          <p>0</p>
+        </div>
+        <div>
+          <img src="./IMAGE/candies-d5f42b83.png" alt="" class="makeit" />
+          <p>0</p>
+        </div>
+      </div>
+      <div class="nap">
+        <a href="./inprogress.html" class="f">Nạp</a>
+        <img src="./IMAGE/potato-3246efaf.png" alt="" class="makeit" />
+      </div>
+    </div>
+
+    <!-- the functions -->
+    <script>
+      // Get the input field
+      let input = document.getElementById("I");
+      // Execute a function when the user presses a key on the keyboard
+      input.addEventListener("keypress", function (event) {
+        // If the user presses the "Enter" key on the keyboard
+        if (event.key === "Enter") {
+          event.preventDefault();
+          // Trigger the button element with a click
+          window.location.href='http://127.0.0.1:5500/CUOIKHOA/%C4%90%E1%BA%A1i.html'
+        }
+      })
+      function Myaction() {
+        document.getElementById("cardl").style.display = "block";
+        document.getElementById("uhl").style.display = "block";
+      }
+      function myp() {
+      var x = document.getElementById("mpl");
+      if (x.type === "password") {
+        x.type = "text";
+      } else {
+        x.type = "password";
+      }}
+      function Myaction2() {
+        document.getElementById("cardl2").style.display = "block";
+        document.getElementById("uhl2").style.display = "block";
+      }
+      function myp2() {
+      var x = document.getElementById("mpl2");
+      if (x.type === "password") {
+        x.type = "text";
+      } else {
+        x.type = "password";
+      }}
+      function CLS(){
+        document.getElementById("cardl").style.display='none';
+        document.getElementById("uhl").style.display='none';
+      }
+      function CLS2(){
+        document.getElementById("cardl2").style.display="none";
+        document.getElementById("uhl2").style.display="none";
+      }
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+
+      function Myfunc() {
+        var x = document.getElementById("INPUT");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
+  </body>
+</html>
